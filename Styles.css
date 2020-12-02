@@ -14,6 +14,8 @@ nav {
 }
 nav img {
   margin-top: 4.5px;
+  position: relative;
+  top: 2.7px;
   position: inline-block;
   margin-left: 5px;
 }
