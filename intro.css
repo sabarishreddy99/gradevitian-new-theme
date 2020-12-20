@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e6fa;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+#section1 {
+  background-color: #add8e6;
+
+  transform: skewY(-20deg);
+  margin-top: -300px;
+}
+
+#section1 .intro-content {
+  transform: skewY(+20deg);
+  padding-top: 300px;
+}
+
+.navigation {
+  padding: 12px 9px;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  color: #383754;
+  font-size: 40px;
+}
+
+#navbarNav {
+  font-family: "Montserrat", sans-serif;
+  color: #383754;
+  font-weight: bold;
+}
+
+#navbarNav ul li:hover {
+  border-bottom: solid 2px grey;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  padding-top: 300px;
+  position: fixed;
+
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 31px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 350px;
+  left: 84%;
+}
+
+.intro-text {
+  font-family: "Fira Sans", sans-serif;
+  /* font-weight: bolder; */
+  padding: 15% 0 0 20%;
+  color: #1d1c2e;
+}
+
+.intro-text h1 a {
+  color: #1d1c2e;
+  text-decoration: none;
+}
+
+.intro-img {
+  height: 100%;
+  width: 100%;
+}
+
+.add2home {
+  font-family: "Montserrat", sans-serif;
+  color: #383754;
+  padding-top: 70px;
+}
+.add2home button {
+  margin: 5px;
+  border-radius: 60px;
+}
+
+.twinbtns-mob {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .navbar-brand {
+    font-size: 30px;
+  }
+
+  .intro-img {
+    position: relative;
+    display: inline-block;
+    transform: scale(5);
+    z-index: -1;
+    margin-top: -70px;
+    padding-top: 18%;
+    padding-left: 28%;
+  }
+
+  .intro-text {
+    padding: 40% 0 0 10%;
+    color: #1d1c2e;
+  }
+
+  .add2home {
+    font-family: "Montserrat", sans-serif;
+    color: #383754;
+    padding-top: 40px;
+  }
+  .add2home button {
+    margin: 6px;
+    border-radius: 60px;
+  }
+
+  .twinbtns-pc {
+    display: none;
+  }
+  .twinbtns-mob {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .intro-img {
+    position: relative;
+    margin-top: 25%;
+    transform: scale(2.5);
+    padding-left: 30%;
+    z-index: -1;
+  }
+}
