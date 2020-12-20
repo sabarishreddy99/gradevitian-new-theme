@@ -134,7 +134,7 @@ h1 {
   width: 100%;
   background-color: #e6e6fa;
   border-radius: 25px;
-  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #fcfcfc;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #e6e6fa;
 }
 
 @media screen and (max-width: 450px) {
