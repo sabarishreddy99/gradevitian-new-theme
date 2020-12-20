@@ -122,6 +122,21 @@ h1 {
 .twinbtns-mob {
   display: none;
 }
+
+/* Gradepredictor section */
+
+.section2 {
+  padding: 270px 15px 10px 15px;
+}
+
+.gpsec {
+  height: 500px;
+  width: 100%;
+  background-color: #e6e6fa;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #fcfcfc;
+}
+
 @media screen and (max-width: 450px) {
   .navbar-brand {
     font-size: 30px;
@@ -158,6 +173,10 @@ h1 {
   .twinbtns-mob {
     display: block;
   }
+
+  .section2 {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1024px) {
@@ -167,5 +186,9 @@ h1 {
     transform: scale(2.5);
     padding-left: 30%;
     z-index: -1;
+  }
+
+  .section2 {
+    padding-top: 170px;
   }
 }
