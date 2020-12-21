@@ -340,12 +340,16 @@ input {
     padding-top: 20px;
   }
 
+  .explore-img {
+    padding-top: 70px;
+  }
+
   .explore-sec h1 {
     position: absolute;
     font-family: "Pacifico", cursive;
     color: #383754;
-    top: 10%;
-    left: -50%;
+    top: 3%;
+    left: 0%;
     text-align: center;
     transform: rotate(-12deg);
     font-size: 18px;
@@ -354,14 +358,14 @@ input {
 
   .exp-btns {
     position: absolute;
-    top: 32%;
+    top: 45%;
     left: 0%;
   }
   .exp-btns button {
     display: block;
     margin: 10px 0 10px 3px;
     border-radius: 40px;
-    width: 200px;
+    width: 180px;
   }
 }
 
