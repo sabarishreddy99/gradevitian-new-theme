@@ -137,13 +137,15 @@
       <h2>Grade Predictor</h2>
        <br>
 
+       <img class="gpinputimg" src="inputimg1.svg" alt="GradePredictor">
+
        <!-- form start -->
 
        <form id="gradeform">
         
         <div>
 
-          <h6>Total Course Credits:</h6>
+          <h5>Total Course Credits:</h5>
           <select id="pcc">
             <option selected="selected">Course credits</option>
             <option>1</option>
@@ -164,8 +166,8 @@
         
         <div class="row">
 
-          <h6>Opt Theory, Lab & J-comp Credits</h6>
-          <div class="col-lg-4 col-sm-1">
+          <h5>Opt Theory, Lab & J-comp Credits</h5>
+          <div class="col-lg-4 col-md-4 col-sm-1">
 
             <select id="ptc">
               <option selected="selected">Theory credits</option>
@@ -180,7 +182,7 @@
 
 
 
-          <div class="col-lg-4 col-sm-1">
+          <div class="col-lg-4 col-md-4 col-sm-1">
 
             <select id="plc">
               <option selected="selected">Lab credits</option>
@@ -195,7 +197,7 @@
 
 
 
-          <div class="col-lg-4 col-sm-1">
+          <div class="col-lg-4 col-md-4 col-sm-1">
 
             <select id="pjc">
               <option selected="selected">J-comp credits</option>
@@ -210,6 +212,68 @@
           </div>
 
         </div>
+
+<!-- Individual Components Theory,Lab, Project -->
+    
+        <div class="ind-comp row">
+          <div class="col-sm-12 col-md-6 col-lg-4 theory-sec">
+              <h5>Theory Component</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h6>CAT-1</h6>
+                  <input type="number" id="pcat1" min="0" step="1" max="50" placeholder="max-50" />
+                </div>
+                <div class="col-sm-6">
+                 <h6>CAT-2</h6>
+                  <input type="number" id="pcat2" min="0" step="1" max="50" placeholder="max-50" />
+                </div>
+    
+              </div>
+    
+              <br>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h6>DA/Quiz</h6>
+                  <input type="number" id="pdq1" min="0" step="1" max="10" placeholder="max-10">
+                </div>
+    
+                <div class="col-sm-4">
+                  <h6>DA/Quiz</h6>
+                  <input type="number" id="pdq2" min="0" step="1" max="10" placeholder="max-10">
+                </div>
+    
+                <div class="col-sm-4">
+                  <h6>DA/Quiz</h6>
+                  <input type="number" id="pdq3" min="0" step="1" max="10" placeholder="max-10">
+                </div>
+    
+              </div>
+    
+    
+    
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h6>Lab Component</h6>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h6>J Component</h6>
+
+      </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
 
 
 

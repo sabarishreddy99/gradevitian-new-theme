@@ -134,6 +134,7 @@ h1 {
   background-color: #efeeee;
   border-radius: 7px;
   box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff;
+  position: relative;
 }
 
 .gpsec h2 {
@@ -143,11 +144,25 @@ h1 {
   text-align: center;
 }
 
-form h6 {
+form h5 {
   font-family: "Montserrat", sans-serif;
   color: #383754;
   text-align: center;
   font-weight: bold;
+}
+
+form h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #383754;
+  text-align: center;
+}
+
+.gpinputimg {
+  position: absolute;
+  top: 5%;
+  height: 40%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 select {
@@ -162,9 +177,24 @@ select {
   background: #efeeee;
   box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   margin-bottom: 1em;
-  color: rgb(104, 102, 102);
+  color: rgb(58, 56, 56);
 }
 
+input {
+  display: block;
+  text-align: center;
+  border: solid 1px rgb(70, 69, 69);
+  outline: none;
+  padding: 5px 10px;
+  background-color: #efeeee;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.theory-sec {
+  border-right: solid 2px #add8e6;
+  border-radius: 5px;
+}
 @media screen and (max-width: 450px) {
   .navbar-brand {
     font-size: 30px;
