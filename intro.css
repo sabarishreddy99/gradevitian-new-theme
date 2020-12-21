@@ -159,8 +159,8 @@ form h6 {
 
 .gpinputimg {
   position: absolute;
-  top: 5%;
-  height: 40%;
+  top: 5px;
+  height: 35%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -189,11 +189,51 @@ input {
   background-color: #efeeee;
   border-radius: 30px;
   margin: 0 auto;
+  width: 100px;
 }
 
-.theory-sec {
+.labcomp {
+  padding: 12%;
+}
+
+.labcomp input {
+  width: 170px;
+  margin-bottom: 20px;
+}
+
+.theory-sec,
+.lab-sec {
   border-right: solid 2px #add8e6;
   border-radius: 5px;
+}
+
+.fats h6 {
+  font-weight: bold;
+  color: #035f4b;
+}
+
+.proj-sec {
+  padding: 8px;
+}
+.compute-btn {
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.compute-btn .btn1,
+.compute-btn .btn2 {
+  border-radius: 40px;
+  border-width: 4px;
+}
+.compute-btn .btn1 {
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.compute-btn .btn2 {
+  margin-right: 2%;
+  text-align: right;
+  display: inline-block;
 }
 
 @media screen and (max-width: 450px) {
@@ -244,15 +284,27 @@ input {
   }
 
   input {
-    display: block;
-    text-align: center;
-    border: solid 1px rgb(70, 69, 69);
-    outline: none;
-    padding: 5px 10px;
-    background-color: #efeeee;
-    border-radius: 30px;
-    margin: 5px auto;
     width: 170px;
+  }
+  .labcomp {
+    padding: 0%;
+  }
+
+  .labcomp input {
+    margin-bottom: 0px;
+  }
+
+  .proj-sec {
+    padding: 0%;
+  }
+
+  .jcomp-sec {
+    padding-top: 20px;
+  }
+
+  .compute-btn .btn1 {
+    margin-left: 4%;
+    margin-right: 30%;
   }
 }
 
@@ -269,5 +321,13 @@ input {
 
   .section2 {
     padding-top: 200px;
+  }
+
+  .gpinputimg {
+    display: none;
+  }
+
+  .compute-btn .btn1 {
+    margin-right: 70%;
   }
 }
