@@ -230,7 +230,8 @@ input {
   margin-right: 1%;
 }
 
-.section3 {
+.section3,
+.section4 {
   position: relative;
 }
 
@@ -253,8 +254,8 @@ input {
   position: absolute;
   font-family: "Pacifico", cursive;
   color: #383754;
-  top: 30%;
-  right: 10%;
+  top: 27%;
+  right: 8%;
   text-align: center;
   transform: scale(2);
   transform: rotate(-12deg);
@@ -273,6 +274,96 @@ input {
   border-radius: 40px;
   width: 200px;
 }
+
+.feedback-sec {
+  background-color: #efeeee;
+  border-radius: 15px;
+  border: solid 1px rgb(207, 206, 206);
+  /* box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff; */
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+.feedback-img {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  width: 400px;
+  height: 400px;
+}
+.feedback-appreciation {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  font-family: "Montserrat", sans-serif;
+  color: #50505e;
+}
+
+.feedback-sec-txt {
+  position: relative;
+}
+
+.feedback-sec-txt h2 {
+  font-family: "Fira Sans", sans-serif;
+  color: #383754;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feedback-sec-txt h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #50505e;
+  text-align: center;
+  font-weight: bold;
+}
+
+.thumbs-btn {
+  text-align: center;
+}
+.thumbs-btn button {
+  border-radius: 50%;
+  box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff;
+  margin: 10px 50px;
+}
+
+.feedback-sec-txt input {
+  width: 250px;
+  border: none;
+  outline: none;
+  display: block;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.6em;
+  margin: 0 auto;
+  background: #efeeee;
+  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  margin-bottom: 1em;
+  color: rgb(58, 56, 56);
+}
+.feedback-sec-txt textarea {
+  width: 250px;
+  border: none;
+  outline: none;
+  display: block;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0.6em;
+  margin: 0 auto;
+  background: #efeeee;
+  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  margin-bottom: 1em;
+  color: rgb(58, 56, 56);
+}
+
+.feedback-send {
+  text-align: right;
+}
+
+.feedback-send button {
+  border-radius: 40px;
+}
+/* ---------------------------------------------MOBILE---------------------------------------- */
 
 @media screen and (max-width: 450px) {
   .navbar-brand {
@@ -367,8 +458,13 @@ input {
     border-radius: 40px;
     width: 180px;
   }
-}
 
+  .feedback-img,
+  .feedback-appreciation {
+    display: none;
+  }
+}
+/* ------------------------------------    TABLET     -------------------------------------------- */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
   .intro-img {
     height: 850px;
@@ -407,5 +503,21 @@ input {
     margin: 10px 0 10px 3px;
     border-radius: 40px;
     width: 200px;
+  }
+
+  .feedback-img {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    width: 230px;
+    height: 230px;
+  }
+  .feedback-appreciation {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    font-family: "Montserrat", sans-serif;
+    color: #50505e;
+    font-size: 23px;
   }
 }
