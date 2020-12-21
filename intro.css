@@ -132,8 +132,9 @@ h1 {
 .gpsec {
   width: 100%;
   background-color: #efeeee;
-  border-radius: 7px;
-  box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff;
+  border-radius: 15px;
+  border: solid 1px rgb(207, 206, 206);
+  /* box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff; */
   position: relative;
 }
 
@@ -229,6 +230,50 @@ input {
   margin-right: 1%;
 }
 
+.section3 {
+  position: relative;
+}
+
+.explore-sec {
+  background-color: #efeeee;
+  border-radius: 15px;
+  border: solid 1px rgb(207, 206, 206);
+  /* box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff; */
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+.explore-img {
+  width: 100%;
+  height: 300px;
+}
+
+.explore-sec h1 {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  color: #383754;
+  top: 30%;
+  right: 10%;
+  text-align: center;
+  transform: scale(2);
+  transform: rotate(-12deg);
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+.exp-btns {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.exp-btns button {
+  display: block;
+  margin: 20px;
+  border-radius: 40px;
+  width: 200px;
+}
+
 @media screen and (max-width: 450px) {
   .navbar-brand {
     font-size: 30px;
@@ -294,6 +339,30 @@ input {
   .jcomp-sec {
     padding-top: 20px;
   }
+
+  .explore-sec h1 {
+    position: absolute;
+    font-family: "Pacifico", cursive;
+    color: #383754;
+    top: 10%;
+    left: -50%;
+    text-align: center;
+    transform: rotate(-12deg);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .exp-btns {
+    position: absolute;
+    top: 32%;
+    left: 0%;
+  }
+  .exp-btns button {
+    display: block;
+    margin: 10px 0 10px 3px;
+    border-radius: 40px;
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1024px) {
@@ -317,5 +386,22 @@ input {
 
   input {
     width: 70px;
+  }
+
+  .explore-sec h1 {
+    top: 35%;
+    right: 2%;
+  }
+
+  .exp-btns {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+  }
+  .exp-btns button {
+    display: block;
+    margin: 10px 0 10px 3px;
+    border-radius: 40px;
+    width: 200px;
   }
 }
