@@ -363,6 +363,74 @@ input {
 .feedback-send button {
   border-radius: 40px;
 }
+
+.footer-sec {
+  background-color: #383754;
+  font-family: "Montserrat", sans-serif;
+  color: #efeeee;
+  position: relative;
+}
+
+.foot-img {
+  margin: 35px 15px 35px 15px;
+  border: solid 2px #efeeee;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.foot-content {
+  position: absolute;
+  top: 18px;
+  left: 125px;
+}
+.foot-content h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+.foot-content p {
+  padding: 0;
+  margin: 0;
+  font-size: smaller;
+  color: #afadad;
+}
+
+.social-icons {
+  margin: 3px;
+  left: 5px;
+  font-size: x-large;
+  color: #afadad;
+}
+
+.winner-img {
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.foot-logo-txt {
+  position: absolute;
+}
+
+.winner-txt {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  color: #a0a0a0;
+  font-size: 25px;
+  bottom: 15px;
+  right: 6px;
+}
+
+.indian {
+  position: absolute;
+  left: 18px;
+  bottom: 0px;
+  font-size: smaller;
+  color: #afadad;
+}
 /* ---------------------------------------------MOBILE---------------------------------------- */
 
 @media screen and (max-width: 450px) {
@@ -462,6 +530,36 @@ input {
   .feedback-img,
   .feedback-appreciation {
     display: none;
+  }
+
+  .foot-img {
+    margin: 56px 15px 56px 15px;
+    border: solid 2px #efeeee;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+
+  .winner-img {
+    display: none;
+  }
+
+  .winner-txt {
+    position: absolute;
+    font-family: "Pacifico", cursive;
+    color: #a0a0a0;
+    font-size: 15px;
+    bottom: 7px;
+    right: 5px;
+  }
+
+  .indian {
+    position: absolute;
+    left: 18px;
+    bottom: 14px;
+    font-size: smaller;
+    color: #afadad;
   }
 }
 /* ------------------------------------    TABLET     -------------------------------------------- */
