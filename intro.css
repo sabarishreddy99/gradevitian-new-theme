@@ -426,7 +426,7 @@ input {
 
 .indian {
   position: absolute;
-  left: 18px;
+  left: 20px;
   bottom: 0px;
   font-size: smaller;
   color: #afadad;
@@ -533,7 +533,7 @@ input {
   }
 
   .foot-img {
-    margin: 56px 15px 56px 15px;
+    margin: 30px 15px 82px 15px;
     border: solid 2px #efeeee;
     border-radius: 50%;
     height: 100px;
@@ -557,7 +557,7 @@ input {
   .indian {
     position: absolute;
     left: 18px;
-    bottom: 14px;
+    bottom: 40px;
     font-size: smaller;
     color: #afadad;
   }
