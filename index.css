@@ -16,6 +16,11 @@ body {
 h1 {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* ------------------------------------------   SECTION-1  --------------------------------------- */
 #section1 {
   background-color: #add8e6;
@@ -222,7 +227,7 @@ h1 {
 
 .feedback-sec-txt h6 {
   font-family: "Montserrat", sans-serif;
-  color: #50505e;
+  color: #6f6f72;
   text-align: center;
   font-weight: bold;
 }
