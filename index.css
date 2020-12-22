@@ -434,6 +434,14 @@ h1 {
     display: none;
   }
 
+  .improve-img {
+    position: absolute;
+    bottom: 0.5%;
+    left: 0%;
+    width: 150px;
+    height: 100px;
+  }
+
   /* ---------------------------------------FOOTER-SECTION---------------------------------- */
 
   .foot-img {
