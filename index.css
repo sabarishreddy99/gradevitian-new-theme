@@ -44,9 +44,7 @@ a {
 
 .fixed-tops button {
   border-radius: 50%;
-}
-.copy-clipboard button {
-  border-width: 2.5px;
+  border-width: 4px;
 }
 
 .fixed-tops i {
