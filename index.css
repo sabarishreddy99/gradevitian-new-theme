@@ -21,6 +21,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* --------------------------------------   Fixed tops    -------------------------------- */
+
+.go-to-top {
+  position: fixed;
+  right: 2.5%;
+  bottom: 3.5%;
+  z-index: 1;
+}
+
+.copy-clipboard {
+  position: fixed;
+  left: 2.5%;
+  bottom: 3.5%;
+  z-index: 1;
+}
+
+.fixed-tops button {
+  border-radius: 50%;
+  border-width: 4px;
+}
+
+.fixed-tops i {
+  font-size: 22px;
+}
 /* ------------------------------------------   SECTION-1  --------------------------------------- */
 #section1 {
   background-color: #add8e6;
