@@ -98,10 +98,13 @@ h1 {
   padding: 15% 0 0 20%;
   color: #1d1c2e;
 }
-
+.intro-txt-line-2 {
+  color: #646466;
+}
 .intro-text h1 a {
   color: #1d1c2e;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro-img {
@@ -338,7 +341,7 @@ h1 {
   color: #a0a0a0;
   font-size: 21px;
   bottom: 10px;
-  right: 44%;
+  right: 45%;
 }
 
 .devices-txt {
