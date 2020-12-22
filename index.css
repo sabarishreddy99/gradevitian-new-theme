@@ -122,114 +122,7 @@ h1 {
 .twinbtns-mob {
   display: none;
 }
-
-/* --------------------------------------   SECTION-2    --------------------------------------- */
-/* Gradepredictor section */
-
-.section2 {
-  padding: 270px 10px 10px 10px;
-}
-
-.gpsec {
-  width: 100%;
-  background-color: #efeeee;
-  border-radius: 15px;
-  border: solid 1px rgb(207, 206, 206);
-  /* box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff; */
-  position: relative;
-}
-
-.gpsec h2 {
-  font-family: "Fira Sans", sans-serif;
-  color: #383754;
-  font-weight: bold;
-  text-align: center;
-}
-
-form h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #383754;
-  text-align: center;
-  font-weight: bold;
-}
-
-form h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #383754;
-  text-align: center;
-}
-
-.gpinputimg {
-  position: absolute;
-  top: 5px;
-  right: 50px;
-  height: 210px;
-}
-
-select {
-  width: 170px;
-  border: none;
-  outline: none;
-  display: block;
-  border-radius: 5000px;
-  text-align: center;
-  padding: 0.6em;
-  margin: 0 auto;
-  background: #efeeee;
-  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
-  margin-bottom: 1em;
-  color: rgb(58, 56, 56);
-}
-
-input {
-  display: block;
-  text-align: center;
-  border: solid 1px rgb(70, 69, 69);
-  outline: none;
-  padding: 5px 10px;
-  background-color: #efeeee;
-  border-radius: 30px;
-  margin: 0 auto;
-  width: 100px;
-}
-
-.labcomp {
-  padding: 12%;
-}
-
-.labcomp input {
-  width: 170px;
-  margin-bottom: 20px;
-}
-
-.theory-sec,
-.lab-sec {
-  border-right: solid 2px #add8e6;
-  border-radius: 5px;
-}
-
-.fats h6 {
-  font-weight: bold;
-  color: #035f4b;
-}
-
-.proj-sec {
-  padding: 8px;
-}
-.compute-btn {
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
-
-.compute-btn .btn1,
-.compute-btn .btn2 {
-  border-radius: 40px;
-  border-width: 4px;
-}
-.compute-btn {
-  text-align: right;
-  margin-right: 1%;
-}
+/* ----------------------------------------   SECTION-2   -------------------------------------- */
 
 /* -----------------------------------    SECTION - 3   --------------------------------------- */
 
@@ -296,6 +189,14 @@ input {
   right: 2%;
   width: 400px;
   height: 400px;
+}
+
+.improve-img {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  width: 200px;
+  height: 200px;
 }
 .feedback-appreciation {
   position: absolute;
@@ -380,7 +281,7 @@ input {
 
 .foot-img {
   margin: 35px 15px 35px 15px;
-  border: solid 2px #efeeee;
+  border: solid 3px #c2c0c0;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -408,15 +309,24 @@ input {
   margin: 3px;
   left: 5px;
   font-size: x-large;
-  color: #afadad;
+  color: #dfdddd;
+  margin: 8px 16px 0 0;
 }
 
 .winner-img {
-  height: 140px;
-  width: 140px;
+  height: 170px;
+  width: 170px;
   position: absolute;
   top: 0px;
-  right: 10px;
+  right: 44%;
+}
+
+.devices-img {
+  height: 150px;
+  width: 170px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .foot-logo-txt {
   position: absolute;
@@ -426,9 +336,17 @@ input {
   position: absolute;
   font-family: "Pacifico", cursive;
   color: #a0a0a0;
-  font-size: 25px;
-  bottom: 15px;
-  right: 6px;
+  font-size: 21px;
+  bottom: 10px;
+  right: 44%;
+}
+
+.devices-txt {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  color: #a0a0a0;
+  bottom: 20px;
+  right: 200px;
 }
 
 .indian {
@@ -479,34 +397,7 @@ input {
   .twinbtns-mob {
     display: block;
   }
-
-  /* -------------------------------------SECTION-2---------------------------------------------- */
-  .section2 {
-    padding-top: 80px;
-  }
-
-  .gpinputimg {
-    display: none;
-  }
-
-  input {
-    width: 170px;
-  }
-  .labcomp {
-    padding: 0%;
-  }
-
-  .labcomp input {
-    margin-bottom: 0px;
-  }
-
-  .proj-sec {
-    padding: 0%;
-  }
-
-  .jcomp-sec {
-    padding-top: 20px;
-  }
+  /* ----------------------------------------   SECTION-2   -------------------------------------- */
 
   /* -------------------------------------SECTION-3------------------------------------------- */
 
@@ -554,7 +445,9 @@ input {
     display: inline-block;
   }
 
-  .winner-img {
+  .winner-img,
+  .devices-txt,
+  .devices-img {
     display: none;
   }
 
@@ -589,17 +482,6 @@ input {
   }
 
   /* -----------------------------------SECTION-2-------------------------------------------- */
-  .section2 {
-    padding-top: 200px;
-  }
-
-  .gpinputimg {
-    display: none;
-  }
-
-  input {
-    width: 70px;
-  }
 
   /* ----------------------------------------SECTION-3----------------------------------------- */
 
@@ -635,5 +517,29 @@ input {
     font-family: "Montserrat", sans-serif;
     color: #50505e;
     font-size: 23px;
+  }
+  /* ------------------------------------------ FOOTER-SECTION  ----------------------------- */
+  .winner-img {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
+
+  .winner-txt {
+    position: absolute;
+    font-family: "Pacifico", cursive;
+    color: #a0a0a0;
+    font-size: 25px;
+    bottom: 15px;
+    right: 6px;
+  }
+  .devices-img {
+    display: none;
+  }
+
+  .devices-txt {
+    display: none;
   }
 }
