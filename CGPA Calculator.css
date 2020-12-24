@@ -5,7 +5,7 @@
   padding: 270px 10px 10px 10px;
 }
 
-.gpacal-sec {
+.cgpacal-sec {
   width: 100%;
   background-color: #efeeee;
   border-radius: 15px;
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.gpacal-sec h2 {
+.cgpacal-sec h2 {
   font-family: "Fira Sans", sans-serif;
   color: #383754;
   font-weight: bold;
@@ -31,6 +31,10 @@
   border-right: solid 10px #efeeee;
 }
 
+.semester-heading-1 {
+  display: none;
+}
+
 form h5 {
   font-family: "Montserrat", sans-serif;
   color: #383754;
@@ -44,7 +48,7 @@ form h6 {
   text-align: center;
 }
 
-.gpainputimg {
+.cgpainputimg {
   position: absolute;
   top: 5px;
   right: 50px;
@@ -67,15 +71,18 @@ select {
 }
 
 input {
-  display: block;
-  text-align: center;
-  border: solid 1px rgb(70, 69, 69);
+  width: 230px;
+  border: solid 0.1px rgb(224, 224, 224);
   outline: none;
-  padding: 5px 10px;
-  background-color: #efeeee;
-  border-radius: 30px;
+  display: block;
+  border-radius: 5000px;
+  text-align: center;
+  padding: 0.6em;
   margin: 0 auto;
-  width: 100px;
+  background: #efeeee;
+  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  margin-bottom: 1em;
+  color: rgb(58, 56, 56);
 }
 
 .compute-btn {
@@ -93,19 +100,79 @@ input {
   margin-right: 1%;
 }
 
+/* -------------------------------------------SECTION-2A---------------------------------------- */
+
+.section-2a {
+  position: relative;
+}
+
+.icgpacal-sec {
+  background-color: #efeeee;
+  border-radius: 15px;
+  border: solid 1px rgb(207, 206, 206);
+  /* box-shadow: 10px 10px 16px -2px #ccc, -10px -10px 16px -2px #fff; */
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+
+.i-cgpainputimg {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  height: 330px;
+}
+
+.i-cgpacal-txt {
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  font-family: "Montserrat", sans-serif;
+  color: #50505e;
+  font-size: 50px;
+}
+
+.icgpacal-sec h2 {
+  font-family: "Fira Sans", sans-serif;
+  color: #383754;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* ---------------------------------------------MOBILE---------------------------------------- */
 @media screen and (max-width: 359px) {
   .section2 {
     padding-top: 80px;
   }
 
-  .gpainputimg {
+  .cgpainputimg {
     display: none;
   }
 
   input,
   select {
-    width: 67px;
+    width: 100px;
+  }
+
+  .semester-heading-1 {
+    display: block;
+  }
+
+  .semester-heading-2 {
+    display: none;
+  }
+
+  /* ------------------------------------ section - 2A----------------------------------- */
+  .section-2a input,
+  select {
+    width: 150px;
+  }
+  .i-cgpainputimg {
+    display: none;
+  }
+
+  .i-cgpacal-txt {
+    display: none;
   }
 }
 
@@ -115,13 +182,34 @@ input {
     padding-top: 80px;
   }
 
-  .gpainputimg {
+  .cgpainputimg {
     display: none;
   }
 
   input,
   select {
-    width: 82px;
+    width: 130px;
+  }
+
+  .semester-heading-1 {
+    display: block;
+  }
+
+  .semester-heading-2 {
+    display: none;
+  }
+
+  /* ------------------------------------ section - 2A----------------------------------- */
+  .section-2a input,
+  select {
+    width: 150px;
+  }
+  .i-cgpainputimg {
+    display: none;
+  }
+
+  .i-cgpacal-txt {
+    display: none;
   }
 }
 
@@ -132,7 +220,7 @@ input {
     padding-top: 200px;
   }
 
-  .gpainputimg {
+  .cgpainputimg {
     right: 2px;
     height: 100px;
   }
@@ -140,5 +228,31 @@ input {
   input,
   select {
     width: 100px;
+  }
+
+  .semester-heading-1 {
+    display: none;
+  }
+  /* ----------------------------------------- section - 2A ---------------------------------------- */
+
+  .section-2a input,
+  select {
+    width: 200px;
+  }
+
+  .i-cgpainputimg {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    height: 230px;
+  }
+
+  .i-cgpacal-txt {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-family: "Montserrat", sans-serif;
+    color: #50505e;
+    font-size: 50px;
   }
 }
