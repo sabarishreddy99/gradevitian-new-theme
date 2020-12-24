@@ -13,12 +13,10 @@
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="gradepred.css">
   <link rel="stylesheet" href="CGPA Estimator.css">
   
   <!-- Javascript files -->
   <script src="index.js"></script>
-  <script src="gradepred.js"></script>
   <script src="CGPA Estimator.js"></script>
 </head>
 <body>
@@ -48,9 +46,9 @@
           
           <a href="">GPA Calculator</a>
           <a href="">CGPA Calculator</a>
-          <a href="">Grade Predictor</a>
+          <a href="index.html">Grade Predictor</a>
           <a href="">Attendance Calculator</a>
-          <a href="">CGPA Estimator</a>
+          <a href="CGPA Estimator.html">CGPA Estimator</a>
           <a href="">Explore</a>
         </div>
       </div>
@@ -59,10 +57,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Grade Predictor</a>
+            <a class="nav-link" href="index.html">Grade Predictor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CGPA Estimator</a>
+            <a class="nav-link" href="CGPA Estimator.html">CGPA Estimator</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Attendance Calculator</a>
@@ -134,208 +132,63 @@
 
 
 
-  <!-- section-2 -->
+  <!-- -----------------------------------section-2---------------------------------------- -->
 
 
   <section class="section2">
 
-    <div class="gpsec">
+    <div class="cgpa-est-sec">
       <br>
-      <h2>Grade Predictor</h2>
+      <h2>CGPA Estimator</h2>
        <br>
 
-       <img class="gpinputimg" src="growth.svg" alt="GradePredictor">
+       <img class="cgpa-est-inputimg" src="target.svg" alt="CGPA Estimator">
+       <h1 class="cgpa-est-sec-txt">We believe you will <br>always give your best.</h1>
 
-       <!-- form start -->
-
-       <form id="gradeform">
-        
-        <div>
-
-          <h5>Total Course Credits:</h5>
-          <select id="pcc">
-            <option selected="selected">Course credits</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>20</option>
-          </select>
+       <!-- ------------------------------------form start---------------- -->
 
 
-        </div>
 
+
+       <form>
+
+
+         <div class="input-bottom-space">     
+         <h6>Do you Wanna be a _?_ Pointer <b>?</b> </h6>
+           <input type="number" id="CGPAneed" min="0" value="9.00" step="0.05" max="10" placeholder="Desired CGPA?">
+          </div> 
       
-
-
         
-        <div class="row">
-
-          <h5>Opt Theory, Lab & J-comp Credits</h5>
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="ptc">
-              <option selected="selected">Theory credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-
-
-
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="plc">
-              <option selected="selected">Lab credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-
-
-
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="pjc">
-              <option selected="selected">J-comp credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>20</option>
-            </select>
-          </div>
-
-        </div>
-
-<!-- Individual Components Theory,Lab, Project -->
-    <br><br>
-
-        <div class="ind-comp row">
-          <div class="col-md-4 col-lg-4 col-sm-12 theory-sec">
-              <h5>Theory Component</h5>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h6>CAT-1</h6>
-                  <input type="number" id="pcat1" min="0" step="1" max="50" placeholder="max-50" />
-                </div>
-                <div class="col-sm-6">
-                 <h6>CAT-2</h6>
-                  <input type="number" id="pcat2" min="0" step="1" max="50" placeholder="max-50" />
-                </div>
-    
-              </div>
-    
-              <br>
-
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq1" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-    
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq2" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-    
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq3" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-              </div>
-
-
-
-              <br>
-                <div class="row fats" >
-                <div class="col-sm-6">
-                  <h6>Final Assesment Test</h6>
-                  <input type="number" id="ptf" min="0" step="1" max="100" placeholder="max-100">
-                </div>
-      
-                <div class="col-sm-6">
-                  <h6>Additional Learning</h6>
-                  <input type="number" id="adl" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-
-              </div>
-              <br>
-    
-              
-    
-    
-    
-          </div>
-
-          <div class="col-sm-12 col-md-4 col-lg-4 lab-sec">
-            <h5>Lab Component</h5>
-           <div class="row labcomp">
-            <div class="col-sm-12">
-            <h6>Lab Internals:</h6>
-            <input type="number" id="pli" min="0" step="1" max="60" placeholder="max-60">
-          </div>
-          
-
-
-
-          <div class="col-sm-12 fats">
-            <h6>Lab FAT:</h6>
-            <input type="number" id="plf" min="0" step="1" max="100" placeholder="max-50">
-          </div>
-
-        </div>
-
-        </div>
-
-
        
-
-        <div class="col-sm-12 col-md-4 col-lg-4 jcomp-sec">
-          <h5>J Component</h5>
-
-          <div class="row">
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-1</h6>
-              <input type="number" id="pj1" min="0" step="1" max="20" placeholder="max-20">
-            </div>
-
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-2</h6>
-              <input type="number" id="pj2" min="0" step="1" max="30" placeholder="max-30">
-            </div>
-
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-3</h6>
-              <input type="number" id="pj3" min="0" step="1" max="50" placeholder="max-50">
-            </div>
-
+     
+     
+         
+           <div class="input-bottom-space">
+           <h6>Current <b>CGPA</b></h6>
+           <input type="number" id="ccgpa" min="0" max="10" step="0.005" placeholder="Enter your current CGPA.">
+          </div> 
+       
+     
+     
+     
+           
+         <div class="input-bottom-space">     
+     <h6>Total no of <b>Credits</b> Completed</h6>
+           <input type="number" id="ccredits" min="1" max="300"  placeholder="(max-300)" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" >
           </div>
+     
 
-
-
-
-      </div>
-
-
-
-
-
-
-        </div>
+           
+         <div class="input-bottom-space">
+     <h6>No of <b>Credits</b> taken now</h6>
+      
+           <input type="number" id="ncredits" min="1" max="50"  placeholder="(max-50)" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" >
+          </div> 
+     
+     
+     
+     
+    
 
 
 
@@ -392,9 +245,9 @@
 
     <div class="exp-btns">
 
-      <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm"> CGPA Estimator <i class="fas fa-arrow-alt-circle-right"></i></button>
+      <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm">Grade Predictor <i class="fas fa-arrow-alt-circle-right"></i></button>
     <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">Attendance Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
-    <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm"> CGPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
+    <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm">CGPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
     <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">GPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
 
     </div>
@@ -452,7 +305,7 @@
         <div>
           
             <h6 >Name : </h6>
-          <input type="text" id="Name" name="entry.946033457" placeholder="Your name...(optional)">
+          <input type="text" id="Name" name="entry.946033457" placeholder="Your good name...">
         </div>
 
 
@@ -462,7 +315,7 @@
             <h6>Your message :</h6>
       
           <textarea rows="5" id="Message" name="entry.1814573274"
-            placeholder="Your opinion & suggestions...(Optional)"></textarea>
+            placeholder="Your suggestions..."></textarea>
         </div>
 
 

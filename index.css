@@ -31,14 +31,14 @@ a {
 .go-to-top {
   position: fixed;
   right: 2.5%;
-  bottom: 3%;
+  bottom: 2.5%;
   z-index: 1;
 }
 
 .copy-clipboard {
   position: fixed;
   left: 2.5%;
-  bottom: 3%;
+  bottom: 2.5%;
   z-index: 1;
 }
 
@@ -273,7 +273,7 @@ a {
 
 .feedback-sec-txt input {
   width: 250px;
-  border: none;
+  border: solid 0.1px rgb(224, 224, 224);
   outline: none;
   display: block;
   border-radius: 50px;
