@@ -287,7 +287,7 @@ a {
 }
 .feedback-sec-txt textarea {
   width: 250px;
-  border: none;
+  border: solid 0.1px rgb(224, 224, 224);
   outline: none;
   display: block;
   border-radius: 15px;
