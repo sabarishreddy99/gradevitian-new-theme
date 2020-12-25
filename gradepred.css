@@ -51,6 +51,9 @@ select {
   padding: 0.6em;
   margin: 0 auto;
   background: #efeeee;
+  -webkit-appearance: none;
+  -moz-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  -webkit-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   margin-bottom: 1em;
   color: rgb(58, 56, 56);
@@ -59,8 +62,12 @@ select {
 input {
   display: block;
   text-align: center;
-  border: solid 1px rgb(70, 69, 69);
+  -webkit-appearance: none;
+  -moz-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  -webkit-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   outline: none;
+  border: none;
   padding: 5px 10px;
   background-color: #efeeee;
   border-radius: 30px;

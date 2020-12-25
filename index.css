@@ -298,6 +298,9 @@ a {
   padding: 0.6em;
   margin: 0 auto;
   background: #efeeee;
+  -webkit-appearance: none;
+  -moz-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  -webkit-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   margin-bottom: 1em;
   color: rgb(58, 56, 56);
