@@ -57,7 +57,6 @@ form h6 {
 
 select {
   width: 170px;
-  border: none;
   outline: none;
   display: block;
   border-radius: 5000px;
@@ -65,6 +64,10 @@ select {
   padding: 0.6em;
   margin: 0 auto;
   background: #efeeee;
+  border: solid 0.1px rgb(224, 224, 224);
+  -webkit-appearance: none;
+  -moz-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  -webkit-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   margin-bottom: 1em;
   color: rgb(58, 56, 56);
@@ -72,7 +75,6 @@ select {
 
 input {
   width: 230px;
-  border: solid 0.1px rgb(224, 224, 224);
   outline: none;
   display: block;
   border-radius: 5000px;
@@ -80,6 +82,10 @@ input {
   padding: 0.6em;
   margin: 0 auto;
   background: #efeeee;
+  border: solid 0.1px rgb(224, 224, 224);
+  -webkit-appearance: none;
+  -moz-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  -webkit-box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
   margin-bottom: 1em;
   color: rgb(58, 56, 56);
