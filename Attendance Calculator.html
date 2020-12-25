@@ -13,11 +13,11 @@
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="gradepred.css">
+  <link rel="stylesheet" href="Attendance Calculator.css">
   
   <!-- Javascript files -->
   <script src="index.js"></script>
-  <script src="gradepred.js"></script>
+  <script src="Attendance Calculator.js"></script>
 
 </head>
 <body>
@@ -81,16 +81,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" style="color: #383754;" href="index.html">Grade Predictor</a>
+            <a class="nav-link" href="index.html">Grade Predictor</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="CGPA Estimator.html">CGPA Estimator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Attendance Calculator.html">Attendance Calculator</a>
+            <a class="nav-link" style="color: #383754;" href="Attendance Calculator.html">Attendance Calculator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="GPA Calculator.html">GPA Calculator</a>
+            <a class="nav-link"  href="GPA Calculator.html">GPA Calculator</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="CGPA Calculator.html">CGPA Calculator</a>
@@ -161,204 +161,47 @@
 
   <section class="section2">
 
-    <div class="gpsec">
+    <div class="attendance-cal-1-sec">
       <br>
-      <h2>Grade Predictor</h2>
+      <h2>Attendance Calculator</h2>
+      <h5>  Format-1 </h5>
        <br>
 
-       <img class="gpinputimg" src="growth.svg" alt="GradePredictor">
+       <img class="attendance-inputimg" src="attendance-inp-img.svg" alt="Attendance Calculator">
+       <h1 class="attendance-1-txt">Your presence <i class="fas fa-check-circle"></i> <br> might be valuable.</h1>
 
        <!-- form start -->
 
-       <form id="gradeform">
-        
+       <form id="attendancecal-1-form">
+
+<br>
+
+<!-- --------------------------   attendance cal sec-1   ------------------------------------------ -->
         <div>
 
-          <h5>Total Course Credits:</h5>
-          <select id="pcc">
-            <option selected="selected">Course credits</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>20</option>
-          </select>
-
-
-        </div>
-
-      
-
-
+          <h6>Classes Present:</h6>
+            <input type="number" min="1" step="1" max="300" id="cone" placeholder="(max-100)"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+           
         
-        <div class="row">
-
-          <h5>Opt Theory, Lab & J-comp Credits</h5>
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="ptc">
-              <option selected="selected">Theory credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
+     
 
 
 
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="plc">
-              <option selected="selected">Lab credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
 
 
-
-          <div class="col-lg-4 col-md-4 col-sm-1">
-
-            <select id="pjc">
-              <option selected="selected">J-comp credits</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>20</option>
-            </select>
-          </div>
-
+          <h6>Classes Absent:</h6>
+            <input type="number" min="1" max="300" step="1" id="ctwo" placeholder="(max-100)"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+           
         </div>
 
-<!-- Individual Components Theory,Lab, Project -->
-    <br><br>
-
-        <div class="ind-comp row">
-          <div class="col-md-4 col-lg-4 col-sm-12 theory-sec">
-              <h5>Theory Component</h5>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h6>CAT-1</h6>
-                  <input type="number" id="pcat1" min="0" step="1" max="50" placeholder="max-50" />
-                </div>
-                <div class="col-sm-6">
-                 <h6>CAT-2</h6>
-                  <input type="number" id="pcat2" min="0" step="1" max="50" placeholder="max-50" />
-                </div>
-    
-              </div>
-    
-              <br>
-
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq1" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-    
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq2" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-    
-                <div class="col-sm-4">
-                  <h6>DA/Quiz</h6>
-                  <input type="number" id="pdq3" min="0" step="1" max="10" placeholder="max-10">
-                </div>
-              </div>
 
 
 
-              <br>
-                <div class="row fats" >
-                <div class="col-sm-6">
-                  <h6>Final Assesment Test</h6>
-                  <input type="number" id="ptf" min="0" step="1" max="100" placeholder="max-100">
-                </div>
-      
-                <div class="col-sm-6">
-                  <h6>Additional Learning</h6>
-                  <input type="number" id="adl" min="0" step="1" max="10" placeholder="max-10">
-                </div>
 
-              </div>
-              <br>
-    
-              
-    
-    
-    
-          </div>
-
-          <div class="col-sm-12 col-md-4 col-lg-4 lab-sec">
-            <h5>Lab Component</h5>
-           <div class="row labcomp">
-            <div class="col-sm-12">
-            <h6>Lab Internals:</h6>
-            <input type="number" id="pli" min="0" step="1" max="60" placeholder="max-60">
-          </div>
+         
           
-
-
-
-          <div class="col-sm-12 fats">
-            <h6>Lab FAT:</h6>
-            <input type="number" id="plf" min="0" step="1" max="100" placeholder="max-50">
-          </div>
-
-        </div>
-
-        </div>
-
-
-       
-
-        <div class="col-sm-12 col-md-4 col-lg-4 jcomp-sec">
-          <h5>J Component</h5>
-
-          <div class="row">
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-1</h6>
-              <input type="number" id="pj1" min="0" step="1" max="20" placeholder="max-20">
-            </div>
-
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-2</h6>
-              <input type="number" id="pj2" min="0" step="1" max="30" placeholder="max-30">
-            </div>
-
-            <div class="col-sm-12 proj-sec">
-              <h6>Review-3</h6>
-              <input type="number" id="pj3" min="0" step="1" max="50" placeholder="max-50">
-            </div>
-
-          </div>
-
-
-
-
-      </div>
-
-
-
-
-
-
-        </div>
-
 
 
     <!-- submit buttons -->
@@ -400,6 +243,109 @@
 
 
 
+
+
+  <section class="section-2a" id="">
+
+
+    <div class="attendance-cal-2-sec">
+      <br>
+      <h5>Format-2</h5>
+       <br>
+
+       <img class="attendance-2-inputimg" src="attendance-cal-2 -inpimg.svg" alt="Instant CGPA Calculator">
+       <h1 class="attendance-2-txt">Be the best <br> version of yourself.</h1>
+       
+
+       <!-- form start -->
+
+       <form id="attendance-cal-2-form">
+
+        <div>
+
+
+
+          <h6 for="noc">Total no of  classes</h6>
+
+            <input type="number" id="noc" min="1" max="300" step="1" value="10"
+              placeholder="(max-200)"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+
+              <br>
+              
+           
+
+
+          <h6 for="one">No of classes present</h6>
+         
+            <input type="number" min="1" step="1" max="300" id="one" placeholder="(max-150)"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+           
+
+
+         
+            <h5>OR</h5>
+         
+
+
+
+
+          <h6 for="two">No of classes absent (>= 1)</h6>
+             
+            <input type="number" min="1" max="300" step="1" id="two" placeholder="(max-150)"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+            
+
+
+      </div>
+         
+
+      
+    
+
+        
+
+
+
+
+
+
+        
+    <!-- submit buttons -->
+
+    <div class="compute-btn">
+
+
+     
+         
+      <button type="button" class="btn btn-outline-dark btn-md btn1">Reset <i class="fas fa-sliders-h"></i></button>
+   
+
+
+
+
+      <button type="button" class="btn btn-dark btn-md btn2">Compute <i class="fas fa-arrow-alt-circle-right"></i></button>
+   
+ 
+</div>
+
+        </form>
+
+        </div>
+    
+    
+      
+    
+    
+    
+      </section>
+    
+
+
+
+
+
+
   <section class="section3" id="explore-id">
 
 
@@ -415,9 +361,9 @@
     <div class="exp-btns">
 
       <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm"> CGPA Estimator <i class="fas fa-arrow-alt-circle-right"></i></button>
-    <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">Attendance Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
-    <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm"> CGPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
-    <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">GPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
+    <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">CGPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
+    <button type="button" class="btn btn-outline-dark btn-lg btn-md btn-sm"> GPA Calculator <i class="fas fa-arrow-alt-circle-right"></i></button>
+    <button type="button" class="btn btn-dark btn-lg btn-md btn-sm">Grade Predictor <i class="fas fa-arrow-alt-circle-right"></i></button>
 
     </div>
 
